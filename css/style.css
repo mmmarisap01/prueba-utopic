@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.4rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #F6F6F6;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.page-container {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    width: 100%;
+    min-width: 350px;
+}
+
+.container-card {
+    width:350px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow:0px 3px 15px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    flex-direction: column;
+}
+
+.container-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.container-card .description-card{
+    padding: 25px;
+}
+
+
+.table-title, .modal-title{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+
+.btn-modal {
+    background-color: #EF5DA8;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    transition: all 0.25s;
+ }
+
+.btn-modal:hover{
+    background-color: #eb469b;
+}
+
+/*-----------------modal-------------------- */
+
+.modal-header, .modal-body{
+    padding: 20px;
+    border-bottom: 1px solid #DEE2E6;
+}
+
+.close {
+    font-size: 2.8rem;
+    line-height: 1.6rem;
+    font-weight: 300;
+    color: #000;
+    opacity: .5;
+}
+
+/* --------------mediaqueries------------------- */
+
+@media (max-width: 600px) {
+    .page-container {
+      display: block;
+    }
+    .row{
+        margin: auto;
+    }
+  }
